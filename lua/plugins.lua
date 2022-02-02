@@ -17,6 +17,7 @@ return require('packer').startup(function()
   use 'mhinz/vim-startify'
   use 'ryanoasis/vim-devicons'
   use 'arcticicestudio/nord-vim'
+  use 'lifepillar/vim-solarized8'
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -43,5 +44,13 @@ return require('packer').startup(function()
   }
 
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+  -- Edit
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
 end)
 
