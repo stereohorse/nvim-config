@@ -16,6 +16,8 @@ vim.g.python_host_prog = '~/.pyenv/versions/neovim2/bin/python'
 
 vim.g.do_filetype_lua = 1
 
+vim.g.mapleader = '.'
+
 vim.opt.termguicolors = true
 vim.opt.background = 'dark'
 vim.cmd'colorscheme solarized8'
